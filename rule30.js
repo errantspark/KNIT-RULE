@@ -21,7 +21,3 @@ const nextN = (gen, n) => {
     console.log(bToP(gen.next().value))
   }
 }
-
-//example
-scarf = generator("WBBBWWBWWBWBBBWB")
-nextN(scarf, 10)
