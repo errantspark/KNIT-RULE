@@ -17,15 +17,29 @@
         width: 80vw;
         image-rendering: pixelated;
       }
-       
+
+      #controls {
+        width: 80vw; 
+      }
+
+      #controls input{
+        width: 100%;
+      }
+
       canvas {
         width: 100%;
       }
     </style>
   </head>
   <body>
-    <div id="pattern"><div>
+    <form id="controls">
+      <input id="pattern-input" type="TEXT" name="pattern" value="WWWWWWWWBWWWWWWW"></input>
+      <br>
+      <input id="lines-input" type="NUMBER" label="lines" min=1 value=10></input>
+      <br>
+      <input id="start-input" type="NUMBER" label="start" min=0 value=0></input>
+    </form>
+    <div id="pattern"></div>
     <script type="text/javascript" src="rule30.js"></script>
-    <script type="text/javascript" src="r30canvas.js"></script>
   </body>
 </html>
