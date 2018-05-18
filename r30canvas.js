@@ -36,7 +36,6 @@ let paint = (pattern, count = 10) => {
   container.appendChild(scratchCanvas)
   console.log("LAST LINE")
   console.log("(for easy continuation)")
-  console.log("")
   console.log(bToP(knitPattern[knitPattern.length-1]))
 }
 
